@@ -252,3 +252,9 @@
   new PureCounter();
 
 })()
+// Ensure this or similar code correctly identifies the sections
+document.querySelector('.nav-link[href="#resume"]').addEventListener('click', function() {
+  document.querySelector('#resume').scrollIntoView({
+    behavior: 'smooth'
+  });
+});
