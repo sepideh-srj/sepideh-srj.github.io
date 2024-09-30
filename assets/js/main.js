@@ -252,6 +252,13 @@
   new PureCounter();
 
 })()
+
+document.querySelector('.nav-link[href="#projects"]').addEventListener('click', function() {
+  document.querySelector('#projects').scrollIntoView({
+    behavior: 'smooth'
+  });
+});
+
 // Ensure this or similar code correctly identifies the sections
 document.querySelector('.nav-link[href="#resume"]').addEventListener('click', function() {
   document.querySelector('#resume').scrollIntoView({
@@ -259,8 +266,3 @@ document.querySelector('.nav-link[href="#resume"]').addEventListener('click', fu
   });
 });
 
-document.querySelector('.nav-link[href="#projects"]').addEventListener('click', function() {
-  document.querySelector('#projects').scrollIntoView({
-    behavior: 'smooth'
-  });
-});
