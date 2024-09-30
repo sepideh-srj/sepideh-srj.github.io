@@ -258,3 +258,9 @@ document.querySelector('.nav-link[href="#resume"]').addEventListener('click', fu
     behavior: 'smooth'
   });
 });
+
+document.querySelector('.nav-link[href="#projects"]').addEventListener('click', function() {
+  document.querySelector('#projects').scrollIntoView({
+    behavior: 'smooth'
+  });
+});
